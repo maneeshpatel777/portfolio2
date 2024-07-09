@@ -1,0 +1,46 @@
+.icon {
+  @include icon-style(
+    $element: nav,
+    $modifier: facebook,
+    $icon: facebook,
+    $font-size: 26px,
+    $line-height: 26px,
+    $padding: 12px 22px 16px,
+    $background-color: #212330,
+    $margin: 0 7px 0 0,
+    $hover-background-color: #3c5998
+  );
+  @include icon-style(
+    $element: nav,
+    $modifier: instagram,
+    $icon: instagram,
+    $font-size: 26px,
+    $line-height: 26px,
+    $padding: 12px 22px 16px,
+    $background-color: #212330,
+    $margin: 0 7px 0 0,
+    $hover-background-color: #0177b5
+  );
+  @include icon-style(
+    $element: nav,
+    $modifier: twitter,
+    $icon: twitter,
+    $font-size: 26px,
+    $line-height: 26px,
+    $padding: 12px 22px 16px,
+    $background-color: #212330,
+    $margin: 0 7px 0 0,
+    $hover-background-color: #00aced
+  );
+  @include icon-style(
+    $element: nav,
+    $modifier: linkedin,
+    $icon: linkedin,
+    $font-size: 26px,
+    $line-height: 26px,
+    $padding: 12px 22px 16px,
+    $background-color: #212330,
+    $margin: 0 7px 0 0,
+    $hover-background-color: #d93175
+  );
+}

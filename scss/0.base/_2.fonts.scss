@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("assets/fonts/icomoon.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/poppins-v15-latin-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/poppins-v15-latin-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+$font-icons: (
+  // Note, some of the comments look unnecessarily extra, but Prettier screws up my code if I don't use them.
+  //
+  // Header-top
+  //
+  phone-ring: "\e900",
+  three-lines: "\e9BD",
+  mouse: "\e906",
+  paper-plane: "\e907",
+  magnify-glass: "\e904",
+
+  //
+  // Nav-bar
+  //
+  laptop2: "\e957",
+  monitor: "\e956",
+  signal: "\e901",
+  // phone-ring: "\e900", (already used in Header-top)
+  //
+  code: "\eA80",
+  shield: "\e903",
+  diploma-hat: "\e902",
+
+  //
+  // Bespoke Submenu
+  //
+  cogs: "\e90C",
+  mobile: "\e958",
+  download-server-box: "\e9C7",
+  cloud: "\e9C1",
+  briefcase: "\e90D",
+  folder: "\e930",
+  group: "\e90F",
+  cloud-download: "\e90B",
+  shuffle-arrows: "\e908",
+  transfer-arrows: "\e909",
+  laptop: "\e90E",
+  globe: "\e90A",
+
+  //
+  // IT Support Submenu
+  //
+  headphones: "\e911",
+  // briefcase: "\e90D", (already used in Bespoke Submenu)
+  // laptop: "\e90E", (already used in Bespoke Submenu)
+  // diploma-hat: "\e902", (already used in Nav-bar)
+  // cloud: "\e9C1", (already used in Bespoke Submenu)
+  //
+  hard-drive: "\e910",
+  //
+  // Digital Marketing Submenu
+  //
+  // magnify-glass: "\e904", (already used in Header-top)
+  //
+  money: "\e912",
+  graph-arrow: "\e915",
+  mail: "\e913",
+  // group: "\e90F", (already used in Bespoke Submenu)
+  //
+  pencil: "\e914",
+  //
+  // Telecoms Services Submenu
+  //
+  ticket: "\e939",
+  phone: "\e942",
+  phone-square: "\e917",
+  speed-test: "\e918",
+  handshake: "\e916",
+  // phone-ring: "\e900", (already used in Nav-bar)
+  //
+  // Web Design Submenu
+  //
+  // pencil: "\e914", (already used in Digital Marketing Submenu)
+  //
+  trolley: "\e919",
+  // monitor: "\e956", (already used in Nav-bar)
+  //
+  megaphone: "\e91A",
+  // mobile: "\e958", (already used in Bespoke Submenu)
+  // cloud: "\e9C1", (already used in Bespoke Submenu)
+  //
+  // Cyber Security Submenu
+  //
+  //
+  paper-folded-corner: "\e91B",
+  clock: "\e91D",
+  vial: "\e91E",
+  // diploma-hat: "\e902", (already used in Nav-bar & IT Support Submenu)
+  // shield: "\e903", (already used in Nav-bar)
+  //
+  padlock: "\e91C",
+  //
+  // Developer Course Submenu
+  //
+  // laptop: "\e90E", (already used in Bespoke & IT Support Submenu)
+  // code: "\eA80", (already used in Nav-bar)
+  //
+  question-mark: "\e91F",
+  // handshake: "\e916", (already used in Telecoms Services Submenu)
+  //
+  //
+  //
+  quote-bubble: "\e905",
+  star: "\e9D9",
+  arrow-up: "\eA3A",
+  arrow-right: "\eA3C",
+  arrow-down: "\eA3E",
+  arrow-left: "\eA40",
+  facebook: "\eA90",
+  instagram: "\eA92",
+  twitter: "\eA96",
+  linkedin: "\eACA"
+);
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

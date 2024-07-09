@@ -1,0 +1,15 @@
+nav {
+  flex-direction: column;
+  //   width: 100px;
+  height: 100%;
+
+  > span {
+    display: inline-flex;
+    height: 100%;
+    //padding: 10px;
+    &:first-child {
+      font-size: 6rem;
+      color: blue;
+    }
+  }
+}

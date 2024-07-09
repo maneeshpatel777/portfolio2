@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+}
+
+a {
+  // Changes url colour to the inherited colour of the text
+  color: inherit;
+
+  &:visited {
+    // Changes visited url colour to the inherited colour of the text
+    color: inherit;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+// Removes blue focus outline of all elements (currently doing it for the xsmall search box)
+*:focus {
+  outline: none;
+}
+
+div {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+// Added this later, thought it was going to be a disaster, but it didn't screw up my navbar thankfully, and once I learned how to stretch things past the margin, site looks better
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @include mq("small") {
+    width: 750px;
+  }
+  @include mq("medium") {
+    width: 970px;
+  }
+  @include mq("large") {
+    width: 1200px;
+  }
+}

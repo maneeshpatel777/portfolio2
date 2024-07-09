@@ -1,0 +1,187 @@
+// ==========================================================================
+// Mixins
+// ==========================================================================
+
+// BEM selectors
+
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+// Generate modifier color classes
+
+@mixin bg-colors($map) {
+  @each $theme, $color in $map {
+    &--#{$theme} {
+      background-color: $color;
+    }
+  }
+}
+
+// Generating :before or :after pseudo-element shapes
+
+@mixin p-el($el, $el-w: null, $el-h: null) {
+  @if $el == "before" or $el == "after" {
+    &:#{$el} {
+      @extend %pseudos;
+      width: $el-w;
+      height: $el-h;
+      @content;
+    }
+  } @else {
+    @error "`#{$el}` is not a valid pseudo-element.";
+  }
+}
+
+// Image replacement
+
+@mixin img-replace($img, $w, $h, $disp: block) {
+  background-image: url("#{$path--rel}/#{$img}");
+  background-repeat: no-repeat;
+  width: $w;
+  height: $h;
+  display: $disp;
+}
+
+// Media Queries
+
+@mixin mq($break) {
+  @if $break == "xsmall" {
+    @media (min-width: $brkpoint-xsm) and (max-width: $brkpoint-sm) {
+      @content;
+    }
+  } @else if $break == "small" {
+    @media (min-width: $brkpoint-sm + 1) {
+      @content;
+    }
+  } @else if $break == "medium" {
+    @media (min-width: $brkpoint-md) {
+      @content;
+    }
+  } @else if $break == "large" {
+    @media (min-width: $brkpoint-lg) {
+      @content;
+    }
+  } @else {
+    @error "Whoops! No value could be retrieved for #{$break}";
+  }
+}
+
+// hover over nav item
+
+@mixin nav-item-hover($element, $bg-color, $translate-x: null) {
+  &--#{$element} {
+    &:hover {
+      background-color: $bg-color;
+
+      &::after {
+        @extend %nav-item-triangle;
+        background-color: $bg-color;
+        color: $bg-color;
+
+        transform: translateX($translate-x);
+      }
+    }
+  }
+}
+
+//
+// icon mixin
+//
+
+@mixin icon-style(
+  $element,
+  $modifier,
+  $icon,
+  $font-size: null,
+  $font-weight: null,
+  $margin: null,
+  $padding: null,
+  $color: null,
+  $line-height: null,
+  $translate-x: null,
+  $translate-y: null,
+  $display: inline-block,
+  $background-color: null,
+  $hover-background-color: null
+) {
+  @include e(#{$element}) {
+    @include m(#{$modifier}) {
+      font-family: "icomoon" !important;
+      margin: $margin;
+      padding: $padding;
+      font-size: $font-size;
+      font-weight: $font-weight;
+      line-height: $line-height;
+      background-color: $background-color;
+
+      &:before {
+        content: icon($icon);
+        color: $color;
+        display: $display;
+
+        @if $translate-x and $translate-y {
+          transform: translate(#{$translate-x}, #{$translate-y});
+        } @else {
+          @if $translate-x {
+            transform: translateX(#{$translate-x});
+          }
+          @if $translate-y {
+            transform: translateY(#{$translate-y});
+          }
+        }
+      }
+
+      @if $hover-background-color {
+        &:hover {
+          background-color: $hover-background-color;
+        }
+      }
+    }
+  }
+}
+
+//
+// Services Panel Hover Mixin
+//
+
+@mixin services-panel-colors($element, $avatar-and-hover-colors, $button-colors: null) {
+  .services-avatar__#{$element} {
+    background-color: $avatar-and-hover-colors;
+  }
+
+  .services-button__#{$element} {
+    color: white;
+
+    @if $button-colors != null {
+      background-color: $button-colors;
+    } @else {
+      background-color: $avatar-and-hover-colors;
+    }
+  }
+
+  .services-panel__#{$element} {
+    &:hover {
+      background-color: $avatar-and-hover-colors;
+      color: white;
+
+      .services-button__#{$element} {
+        color: $avatar-and-hover-colors;
+        background-color: white;
+      }
+      .services-avatar__#{$element} {
+        background-color: white;
+      }
+      .icon__services--#{$element}:before {
+        color: $avatar-and-hover-colors;
+      }
+    }
+  }
+}

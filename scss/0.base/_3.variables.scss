@@ -1,0 +1,76 @@
+// Variables
+
+// Breakpoints
+
+$brkpoint-xsm: 1px;
+$brkpoint-sm: 767px;
+$brkpoint-md: 992px;
+$brkpoint-lg: 1260px;
+
+// Button Colors
+
+$colors: (
+  //
+  // Header Top
+  //
+  header-top-button-phone-ring-icon: #12141a,
+  header-top-button-support-hover-off: #4184d7,
+  header-top-button-support-hover-on: #296ec6,
+  header-top-button-contact-hover-off: #999aa3,
+  header-top-button-contact-hover-on: #84858f,
+  header-top-button-search-hover-off: #999aa3,
+  header-top-button-search-hover-on: #7f808a,
+  header-top-button-nav-hover-off: #343645,
+  header-top-button-nav-hover-on: #21242e,
+  //
+  // Nav Bar & Nav Item's Icons
+  //
+  nav-bar-background: #343645,
+  bespoke-software-icon: #67809f,
+  it-support-icon: #4183d7,
+  digital-marketing-icon: #2ecc71,
+  telecoms-services-icon: #d64542,
+  web-design-icon: #9270b1,
+  cyber-security-icon: #f6255a,
+  developer-course-icon: #cf4126,
+  //
+  // Nav Items Hover
+  //
+  bespoke-software-hover: #67809f,
+  it-support-hover: #4183d7,
+  digital-marketing-hover: #2ecc71,
+  telecoms-services-hover: #d64541,
+  web-design-hover: #926fb1,
+  cyber-security-hover: #f62459,
+  developer-course-hover: #ce4126,
+  //
+  // Submenu
+  //
+  bespoke-software-submenu: #516781,
+  it-support-submenu: #286abd,
+  digital-marketing-submenu: #25a25a,
+  telecoms-services-submenu: #bc2c28,
+  web-design-submenu: #79539a,
+  cyber-security-submenu: #de0a3f,
+  developer-course-submenu: #a3321e,
+  //
+  // Services Avatar Background, &:hover Icon & Button Text
+  //
+  bespoke-software-avatar-hoverIcon-hoverButtonText: #67809f,
+  it-support-avatar-hoverIcon-hoverButtonText: #4184d7,
+  digital-marketing-avatar-hoverIcon-hoverButtonText: #2fcc71,
+  telecoms-services-avatar-hoverIcon-hoverButtonText: #d64542,
+  web-design-avatar-hoverIcon-hoverButtonText: #9270b1,
+  cyber-security-avatar-hoverIcon-hoverButtonText: #f6255a,
+  developer-training-avatar-hoverIcon-hoverButtonText: #cf4126,
+  //
+  // Services Button
+  //
+  bespoke-software-services-button: #f7b322,
+  it-support-services-button: #4184d7,
+  digital-marketing-services-button: #2fcc71,
+  telecoms-services-services-button: #d64542,
+  web-design-services-button: #9270b1,
+  cyber-security-services-button: #f6255a,
+  developer-training-services-button: #cf4126
+);
