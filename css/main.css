@@ -33,16 +33,21 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif; }
-
-html {
-  font-size: 16px; }
+  font-family: "Poppins", sans-serif;
+  border: medium none;
+  background: none repeat scroll 0 0 transparent;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: normal;
+  list-style: none outside none;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0; }
 
 body {
   font-size: 1rem;
-  letter-spacing: 0.4px;
-  margin: 0;
-  padding: 0; }
+  letter-spacing: 0.4px; }
 
 a {
   color: inherit;
@@ -206,6 +211,8 @@ nav {
 
 #coding {
   padding: 20px; }
+  #coding pre {
+    border: 1px solid #000; }
 
 #scs {
   padding: 20px; }
