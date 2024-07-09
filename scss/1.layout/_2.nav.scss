@@ -1,15 +1,7 @@
-nav {
-  flex-direction: column;
-  //   width: 100px;
-  height: 100%;
-
-  > span {
-    display: inline-flex;
-    height: 100%;
-    //padding: 10px;
-    &:first-child {
-      font-size: 6rem;
-      color: blue;
-    }
+nav p {
+  &:first-child {
+    font-size: 3rem;
+    color: red;
+    border-bottom: 1px solid black;
   }
 }

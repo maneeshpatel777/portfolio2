@@ -15,6 +15,7 @@ body {
 a {
   // Changes url colour to the inherited colour of the text
   color: inherit;
+  text-decoration: none;
 
   &:visited {
     // Changes visited url colour to the inherited colour of the text
