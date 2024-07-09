@@ -1,3 +1,47 @@
+nav {
+  grid-area: nav;
+}
+
+#hero {
+  grid-area: hero;
+}
+
+#about {
+  grid-area: about;
+}
+
+#portfolio {
+  grid-area: portfolio;
+}
+
+#coding {
+  grid-area: coding;
+}
+
+#scs {
+  grid-area: scs;
+}
+
+#contact {
+  grid-area: contact;
+}
+
+footer {
+  grid-area: footer;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "nav hero hero"
+    "nav about about"
+    "nav portfolio portfolio"
+    "nav coding coding"
+    "nav scs scs"
+    "nav contact contact"
+    "nav footer footer";
+}
+
 .icon {
   @include icon-style(
     $element: nav,

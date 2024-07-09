@@ -1,0 +1,18 @@
+#hero {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  div {
+    &:first-child {
+      position: relative;
+    }
+    &:last-child {
+      position: absolute;
+      top: 20%;
+      left: 20%;
+    }
+  }
+}
