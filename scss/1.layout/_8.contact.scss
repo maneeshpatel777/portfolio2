@@ -1,0 +1,42 @@
+.contact-info {
+  grid-area: info;
+  display: table; // this or display inline-table is the only way to make this start from the top left, otherwise it centers it automatically and even flex doesn't fix it
+}
+
+.contact-form {
+  display: contents; // to treat the elements as a direct child of the contact-container grid so grid template works correctly
+
+  input {
+    &:nth-of-type(1) {
+      grid-area: form-fname;
+    }
+    &:nth-of-type(2) {
+      grid-area: form-lname;
+    }
+    &:nth-of-type(3) {
+      grid-area: form-email;
+    }
+    &:nth-of-type(4) {
+      grid-area: form-subject;
+    }
+  }
+  textarea {
+    grid-area: form-message;
+  }
+  button {
+    grid-area: form-submit;
+  }
+}
+
+.contact-container {
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "info form-fname form-lname"
+    "info form-email form-email"
+    "info form-subject form-subject"
+    "info form-message form-message"
+    "info form-submit .";
+}

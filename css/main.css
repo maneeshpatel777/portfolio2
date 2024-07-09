@@ -108,70 +108,78 @@ body {
   display: grid;
   grid-template-areas: "nav hero hero" "nav about about" "nav portfolio portfolio" "nav coding coding" "nav scs scs" "nav contact contact" "nav footer footer"; }
 
+nav {
+  border-right: 3px solid #5ba1b3; }
+  nav p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #5ba1b3;
+    padding: 10px 0; }
+    nav p:first-of-type {
+      font-size: 3rem;
+      color: red;
+      border-bottom: 3px solid #5ba1b3;
+      padding-bottom: 50px; }
+    nav p:last-of-type {
+      border-top: 3px solid #5ba1b3;
+      border-bottom: 3px solid #5ba1b3; }
+    nav p a:hover {
+      border-bottom: 2px solid #5ba1b3; }
+
+#social-media {
+  margin-top: 50px; }
+
 .icon__nav--facebook {
   font-family: "icomoon" !important;
   margin: 0 7px 0 0;
   padding: 12px 22px 16px;
   font-size: 26px;
-  line-height: 26px;
-  background-color: #212330; }
+  line-height: 26px; }
   .icon__nav--facebook:before {
     content: "";
+    color: #668e9d;
     display: inline-block; }
-  .icon__nav--facebook:hover {
-    background-color: #3c5998; }
+  .icon__nav--facebook:hover:before {
+    color: #3c5998; }
 .icon__nav--instagram {
   font-family: "icomoon" !important;
   margin: 0 7px 0 0;
   padding: 12px 22px 16px;
   font-size: 26px;
-  line-height: 26px;
-  background-color: #212330; }
+  line-height: 26px; }
   .icon__nav--instagram:before {
     content: "";
+    color: #668e9d;
     display: inline-block; }
-  .icon__nav--instagram:hover {
-    background-color: #0177b5; }
+  .icon__nav--instagram:hover:before {
+    color: #0177b5; }
 .icon__nav--twitter {
   font-family: "icomoon" !important;
   margin: 0 7px 0 0;
   padding: 12px 22px 16px;
   font-size: 26px;
-  line-height: 26px;
-  background-color: #212330; }
+  line-height: 26px; }
   .icon__nav--twitter:before {
     content: "";
+    color: #668e9d;
     display: inline-block; }
-  .icon__nav--twitter:hover {
-    background-color: #00aced; }
+  .icon__nav--twitter:hover:before {
+    color: #00aced; }
 .icon__nav--linkedin {
   font-family: "icomoon" !important;
   margin: 0 7px 0 0;
   padding: 12px 22px 16px;
   font-size: 26px;
-  line-height: 26px;
-  background-color: #212330; }
+  line-height: 26px; }
   .icon__nav--linkedin:before {
     content: "";
+    color: #668e9d;
     display: inline-block; }
-  .icon__nav--linkedin:hover {
-    background-color: #d93175; }
+  .icon__nav--linkedin:hover:before {
+    color: #d93175; }
 
-nav {
-  border-right: 1px solid #5ba1b3;
-  background-color: black; }
-  nav p {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #5ba1b3; }
-    nav p:first-child {
-      font-size: 3rem;
-      color: red;
-      border-bottom: 1px solid #5ba1b3;
-      padding-bottom: 50px; }
-
-#social-media {
-  margin-top: 50px; }
+#about {
+  padding: 20px; }
 
 #hero {
   position: relative; }
@@ -195,5 +203,41 @@ nav {
 
 .project img {
   max-width: 100%; }
+
+#coding {
+  padding: 20px; }
+
+#scs {
+  padding: 20px; }
+
+.contact-info {
+  grid-area: info;
+  display: table; }
+
+.contact-form {
+  display: contents; }
+  .contact-form input:nth-of-type(1) {
+    grid-area: form-fname; }
+  .contact-form input:nth-of-type(2) {
+    grid-area: form-lname; }
+  .contact-form input:nth-of-type(3) {
+    grid-area: form-email; }
+  .contact-form input:nth-of-type(4) {
+    grid-area: form-subject; }
+  .contact-form textarea {
+    grid-area: form-message; }
+  .contact-form button {
+    grid-area: form-submit; }
+
+.contact-container {
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "info form-fname form-lname" "info form-email form-email" "info form-subject form-subject" "info form-message form-message" "info form-submit ."; }
+
+footer {
+  padding: 20px;
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

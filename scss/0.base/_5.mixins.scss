@@ -110,7 +110,8 @@
   $translate-y: null,
   $display: inline-block,
   $background-color: null,
-  $hover-background-color: null
+  $hover-background-color: null,
+  $hover-color: null
 ) {
   @include e(#{$element}) {
     @include m(#{$modifier}) {
@@ -139,9 +140,16 @@
         }
       }
 
-      @if $hover-background-color {
+      @if $hover-background-color or $hover-color {
         &:hover {
-          background-color: $hover-background-color;
+          @if $hover-background-color {
+            background-color: $hover-background-color;
+          }
+          @if $hover-color {
+            &:before {
+              color: $hover-color;
+            }
+          }
         }
       }
     }
