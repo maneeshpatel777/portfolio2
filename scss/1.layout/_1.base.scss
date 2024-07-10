@@ -9,9 +9,14 @@
 // jet: #282826ff,
 // blue-munsell-3: #478b9dff
 
+input::placeholder,
+textarea::placeholder {
+  color: lighten(color(jet), 40%);
+}
+
 h1 {
   font-size: 2.5rem;
-  border-bottom: 2px solid color(moonstone);
+  border-bottom: 2px solid darken(color(moonstone), 12%);
   padding-bottom: 0.3em;
   // color: color(cadet-gray);
   color: color(paynes-gray);
@@ -94,6 +99,7 @@ footer {
 
 body {
   display: grid;
+
   grid-template-areas:
     "nav hero hero"
     "nav about about"
@@ -103,8 +109,8 @@ body {
     "nav contact contact"
     "nav footer footer";
 
-  background: $gradient-top-darken;
-  background: $gradient-right-darken;
+  // background: $gradient-top-darken;
+  // background: $gradient-right-darken;
   // background: $gradient-bottom-darken;
   // background: $gradient-left-darken;
   background: $gradient-top-darken; // good

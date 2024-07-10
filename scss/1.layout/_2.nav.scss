@@ -42,7 +42,7 @@
 // $gradient-radial-darken: radial-gradient(darken(#939999ff, 10%), darken(#3c707fff, 10%), darken(#729199ff, 10%), darken(#73a8b7ff, 10%), darken(#619fb1ff, 10%), darken(#5a7479ff, 10%), darken(#418092ff, 10%), darken(#548e9eff, 10%), darken(#478b9dff, 10%));
 
 nav {
-  border-right: 2px solid darken(color(blue-munsell-3), 5%);
+  border-right: 2px solid darken(color(blue-munsell-3), 15%);
   //   background: $gradient-top-darken;
   //   background: $gradient-right-darken;
   //   background: $gradient-bottom-darken;
@@ -63,13 +63,13 @@ nav {
     &:first-of-type {
       font-size: 3rem;
       color: color(moonstone);
-      border-bottom: 2px solid darken(color(blue-munsell-3), 5%);
+      border-bottom: 2px solid darken(color(blue-munsell-3), 13%);
       padding: 50px 0;
     }
 
     &:last-of-type {
-      border-top: 2px solid darken(color(blue-munsell-3), 10%);
-      border-bottom: 2px solid darken(color(blue-munsell-3), 10%);
+      border-top: 2px solid darken(color(blue-munsell-3), 15%);
+      border-bottom: 2px solid darken(color(blue-munsell-3), 15%);
       // padding: 10px 0;
     }
 
@@ -102,7 +102,7 @@ nav {
     $padding: 12px 10px 16px,
     $color: lighten(color(blue-munsell-3), 10%),
     //$margin: 0 7px 0 0,
-    $hover-color: lighten(#3c5998, 5%)
+    $hover-color: lighten(#3c5998, 15%)
   );
   @include icon-style(
     $element: nav,
