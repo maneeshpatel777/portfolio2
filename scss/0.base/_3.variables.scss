@@ -72,5 +72,249 @@ $colors: (
   telecoms-services-services-button: #d64542,
   web-design-services-button: #9270b1,
   cyber-security-services-button: #f6255a,
-  developer-training-services-button: #cf4126
+  developer-training-services-button: #cf4126,
+  //
+  // Random coolors pallete
+  //
+  cadet-gray: #939999ff,
+  paynes-gray: #3c707fff,
+  air-force-blue: #729199ff,
+  moonstone: #73a8b7ff,
+  moonstone-2: #619fb1ff,
+  paynes-gray-2: #5a7479ff,
+  blue-munsell: #418092ff,
+  blue-munsell-2: #548e9eff,
+  jet: #282826ff,
+  blue-munsell-3: #478b9dff
+);
+
+/* SCSS HEX */
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #939999ff, #3c707fff, #729199ff, #73a8b7ff, #619fb1ff, #5a7479ff, #418092ff, #548e9eff, #478b9dff);
+$gradient-right: linear-gradient(90deg, #939999ff, #3c707fff, #729199ff, #73a8b7ff, #619fb1ff, #5a7479ff, #418092ff, #548e9eff, #478b9dff);
+$gradient-bottom: linear-gradient(180deg, #939999ff, #3c707fff, #729199ff, #73a8b7ff, #619fb1ff, #5a7479ff, #418092ff, #548e9eff, #478b9dff);
+$gradient-left: linear-gradient(270deg, #939999ff, #3c707fff, #729199ff, #73a8b7ff, #619fb1ff, #5a7479ff, #418092ff, #548e9eff, #478b9dff);
+$gradient-top-right: linear-gradient(45deg, #939999ff, #3c707fff, #729199ff, #73a8b7ff, #619fb1ff, #5a7479ff, #418092ff, #548e9eff, #478b9dff);
+$gradient-bottom-right: linear-gradient(135deg, #939999ff, #3c707fff, #729199ff, #73a8b7ff, #619fb1ff, #5a7479ff, #418092ff, #548e9eff, #478b9dff);
+$gradient-top-left: linear-gradient(225deg, #939999ff, #3c707fff, #729199ff, #73a8b7ff, #619fb1ff, #5a7479ff, #418092ff, #548e9eff, #478b9dff);
+$gradient-bottom-left: linear-gradient(315deg, #939999ff, #3c707fff, #729199ff, #73a8b7ff, #619fb1ff, #5a7479ff, #418092ff, #548e9eff, #478b9dff);
+$gradient-radial: radial-gradient(#939999ff, #3c707fff, #729199ff, #73a8b7ff, #619fb1ff, #5a7479ff, #418092ff, #548e9eff, #478b9dff);
+
+// Lightened gradients
+$gradient-top-lighten: linear-gradient(
+  0deg,
+  lighten(#939999ff, 10%),
+  lighten(#3c707fff, 10%),
+  lighten(#729199ff, 10%),
+  lighten(#73a8b7ff, 10%),
+  lighten(#619fb1ff, 10%),
+  lighten(#5a7479ff, 10%),
+  lighten(#418092ff, 10%),
+  lighten(#548e9eff, 10%),
+  lighten(#478b9dff, 10%)
+);
+$gradient-right-lighten: linear-gradient(
+  90deg,
+  lighten(#939999ff, 10%),
+  lighten(#3c707fff, 10%),
+  lighten(#729199ff, 10%),
+  lighten(#73a8b7ff, 10%),
+  lighten(#619fb1ff, 10%),
+  lighten(#5a7479ff, 10%),
+  lighten(#418092ff, 10%),
+  lighten(#548e9eff, 10%),
+  lighten(#478b9dff, 10%)
+);
+$gradient-bottom-lighten: linear-gradient(
+  180deg,
+  lighten(#939999ff, 10%),
+  lighten(#3c707fff, 10%),
+  lighten(#729199ff, 10%),
+  lighten(#73a8b7ff, 10%),
+  lighten(#619fb1ff, 10%),
+  lighten(#5a7479ff, 10%),
+  lighten(#418092ff, 10%),
+  lighten(#548e9eff, 10%),
+  lighten(#478b9dff, 10%)
+);
+$gradient-left-lighten: linear-gradient(
+  270deg,
+  lighten(#939999ff, 10%),
+  lighten(#3c707fff, 10%),
+  lighten(#729199ff, 10%),
+  lighten(#73a8b7ff, 10%),
+  lighten(#619fb1ff, 10%),
+  lighten(#5a7479ff, 10%),
+  lighten(#418092ff, 10%),
+  lighten(#548e9eff, 10%),
+  lighten(#478b9dff, 10%)
+);
+$gradient-top-right-lighten: linear-gradient(
+  45deg,
+  lighten(#939999ff, 10%),
+  lighten(#3c707fff, 10%),
+  lighten(#729199ff, 10%),
+  lighten(#73a8b7ff, 10%),
+  lighten(#619fb1ff, 10%),
+  lighten(#5a7479ff, 10%),
+  lighten(#418092ff, 10%),
+  lighten(#548e9eff, 10%),
+  lighten(#478b9dff, 10%)
+);
+$gradient-bottom-right-lighten: linear-gradient(
+  135deg,
+  lighten(#939999ff, 10%),
+  lighten(#3c707fff, 10%),
+  lighten(#729199ff, 10%),
+  lighten(#73a8b7ff, 10%),
+  lighten(#619fb1ff, 10%),
+  lighten(#5a7479ff, 10%),
+  lighten(#418092ff, 10%),
+  lighten(#548e9eff, 10%),
+  lighten(#478b9dff, 10%)
+);
+$gradient-top-left-lighten: linear-gradient(
+  225deg,
+  lighten(#939999ff, 10%),
+  lighten(#3c707fff, 10%),
+  lighten(#729199ff, 10%),
+  lighten(#73a8b7ff, 10%),
+  lighten(#619fb1ff, 10%),
+  lighten(#5a7479ff, 10%),
+  lighten(#418092ff, 10%),
+  lighten(#548e9eff, 10%),
+  lighten(#478b9dff, 10%)
+);
+$gradient-bottom-left-lighten: linear-gradient(
+  315deg,
+  lighten(#939999ff, 10%),
+  lighten(#3c707fff, 10%),
+  lighten(#729199ff, 10%),
+  lighten(#73a8b7ff, 10%),
+  lighten(#619fb1ff, 10%),
+  lighten(#5a7479ff, 10%),
+  lighten(#418092ff, 10%),
+  lighten(#548e9eff, 10%),
+  lighten(#478b9dff, 10%)
+);
+$gradient-radial-lighten: radial-gradient(
+  lighten(#939999ff, 10%),
+  lighten(#3c707fff, 10%),
+  lighten(#729199ff, 10%),
+  lighten(#73a8b7ff, 10%),
+  lighten(#619fb1ff, 10%),
+  lighten(#5a7479ff, 10%),
+  lighten(#418092ff, 10%),
+  lighten(#548e9eff, 10%),
+  lighten(#478b9dff, 10%)
+);
+
+// Darkened gradients
+$gradient-top-darken: linear-gradient(
+  0deg,
+  darken(#939999ff, 10%),
+  darken(#3c707fff, 10%),
+  darken(#729199ff, 20%),
+  darken(#73a8b7ff, 30%),
+  darken(#619fb1ff, 10%),
+  darken(#5a7479ff, 10%),
+  darken(#418092ff, 10%),
+  darken(#548e9eff, 10%),
+  darken(#478b9dff, 10%)
+);
+$gradient-right-darken: linear-gradient(
+  90deg,
+  darken(#939999ff, 10%),
+  darken(#3c707fff, 10%),
+  darken(#729199ff, 20%),
+  darken(#73a8b7ff, 30%),
+  darken(#619fb1ff, 15%),
+  darken(#5a7479ff, 10%),
+  darken(#418092ff, 10%),
+  darken(#548e9eff, 10%),
+  darken(#478b9dff, 10%)
+);
+$gradient-bottom-darken: linear-gradient(
+  180deg,
+  darken(#939999ff, 10%),
+  darken(#3c707fff, 10%),
+  darken(#729199ff, 20%),
+  darken(#73a8b7ff, 30%),
+  darken(#619fb1ff, 15%),
+  darken(#5a7479ff, 10%),
+  darken(#418092ff, 10%),
+  darken(#548e9eff, 10%),
+  darken(#478b9dff, 10%)
+);
+$gradient-left-darken: linear-gradient(
+  270deg,
+  darken(#939999ff, 10%),
+  darken(#3c707fff, 10%),
+  darken(#729199ff, 20%),
+  darken(#73a8b7ff, 30%),
+  darken(#619fb1ff, 15%),
+  darken(#5a7479ff, 10%),
+  darken(#418092ff, 10%),
+  darken(#548e9eff, 10%),
+  darken(#478b9dff, 10%)
+);
+$gradient-top-right-darken: linear-gradient(
+  45deg,
+  darken(#939999ff, 10%),
+  darken(#3c707fff, 10%),
+  darken(#729199ff, 20%),
+  darken(#73a8b7ff, 30%),
+  darken(#619fb1ff, 15%),
+  darken(#5a7479ff, 10%),
+  darken(#418092ff, 10%),
+  darken(#548e9eff, 10%),
+  darken(#478b9dff, 10%)
+);
+$gradient-bottom-right-darken: linear-gradient(
+  135deg,
+  darken(#939999ff, 10%),
+  darken(#3c707fff, 10%),
+  darken(#729199ff, 20%),
+  darken(#73a8b7ff, 30%),
+  darken(#619fb1ff, 15%),
+  darken(#5a7479ff, 10%),
+  darken(#418092ff, 10%),
+  darken(#548e9eff, 10%),
+  darken(#478b9dff, 10%)
+);
+$gradient-top-left-darken: linear-gradient(
+  225deg,
+  darken(#939999ff, 10%),
+  darken(#3c707fff, 10%),
+  darken(#729199ff, 20%),
+  darken(#73a8b7ff, 30%),
+  darken(#619fb1ff, 15%),
+  darken(#5a7479ff, 10%),
+  darken(#418092ff, 10%),
+  darken(#548e9eff, 10%),
+  darken(#478b9dff, 10%)
+);
+$gradient-bottom-left-darken: linear-gradient(
+  315deg,
+  darken(#939999ff, 10%),
+  darken(#3c707fff, 10%),
+  darken(#729199ff, 20%),
+  darken(#73a8b7ff, 30%),
+  darken(#619fb1ff, 15%),
+  darken(#5a7479ff, 10%),
+  darken(#418092ff, 10%),
+  darken(#548e9eff, 10%),
+  darken(#478b9dff, 10%)
+);
+$gradient-radial-darken: radial-gradient(
+  darken(#939999ff, 10%),
+  darken(#3c707fff, 10%),
+  darken(#729199ff, 20%),
+  darken(#73a8b7ff, 30%),
+  darken(#619fb1ff, 15%),
+  darken(#5a7479ff, 10%),
+  darken(#418092ff, 10%),
+  darken(#548e9eff, 10%),
+  darken(#478b9dff, 10%)
 );

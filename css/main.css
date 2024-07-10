@@ -31,6 +31,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+/* SCSS HEX */
+/* SCSS Gradient */
 * {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
@@ -44,6 +46,9 @@
   text-align: left;
   text-decoration: none;
   text-indent: 0; }
+
+code {
+  font-family: monospace; }
 
 body {
   font-size: 1rem;
@@ -85,6 +90,34 @@ div {
     .container {
       width: 1200px; } }
 
+h1 {
+  font-size: 2.5rem;
+  border-bottom: 2px solid #73a8b7ff;
+  padding-bottom: 0.3em;
+  color: #3c707fff; }
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  border-bottom: 2px solid #73a8b7ff;
+  padding-bottom: 0.8rem;
+  margin-bottom: 1rem;
+  color: #939999ff;
+  color: #3c707fff;
+  color: #498fa4; }
+
+h3 {
+  font-size: 1.75rem; }
+
+p {
+  color: #c2c2be;
+  line-height: 1.6; }
+
+pre {
+  background-color: #939999ff;
+  padding: 1em;
+  border-radius: 5px; }
+
 nav {
   grid-area: nav; }
 
@@ -111,80 +144,80 @@ footer {
 
 body {
   display: grid;
-  grid-template-areas: "nav hero hero" "nav about about" "nav portfolio portfolio" "nav coding coding" "nav scs scs" "nav contact contact" "nav footer footer"; }
+  grid-template-areas: "nav hero hero" "nav about about" "nav portfolio portfolio" "nav coding coding" "nav scs scs" "nav contact contact" "nav footer footer";
+  background: linear-gradient(0deg, #798080, #2c515c, #455a60, #315560, #4a8495, #44585c, #31616f, #42707d, #376c7a);
+  background: linear-gradient(90deg, #798080, #2c515c, #455a60, #315560, #417584, #44585c, #31616f, #42707d, #376c7a);
+  background: linear-gradient(0deg, #798080, #2c515c, #455a60, #315560, #4a8495, #44585c, #31616f, #42707d, #376c7a); }
 
 nav {
-  border-right: 3px solid #5ba1b3; }
+  border-right: 2px solid #3f7b8b;
+  background: linear-gradient(315deg, #798080, #2c515c, #455a60, #315560, #417584, #44585c, #31616f, #42707d, #376c7a);
+  width: 250px; }
   nav p {
     text-align: center;
-    font-size: 1.5rem;
-    color: #5ba1b3;
+    color: #67a9ba;
     padding: 10px 0; }
     nav p:first-of-type {
       font-size: 3rem;
-      color: red;
-      border-bottom: 3px solid #5ba1b3;
-      padding-bottom: 50px; }
+      color: #73a8b7ff;
+      border-bottom: 2px solid #3f7b8b;
+      padding: 50px 0; }
     nav p:last-of-type {
-      border-top: 3px solid #5ba1b3;
-      border-bottom: 3px solid #5ba1b3; }
-    nav p a:hover {
-      border-bottom: 2px solid #5ba1b3; }
+      border-top: 2px solid #376c7a;
+      border-bottom: 2px solid #376c7a; }
+    nav p a {
+      font-size: 1.3rem; }
+      nav p a:hover {
+        border-bottom: 3px solid #548e9eff; }
 
 #social-media {
-  margin-top: 50px; }
+  margin-top: 30px;
+  text-align: center; }
 
 .icon__nav--facebook {
   font-family: "icomoon" !important;
-  margin: 0 7px 0 0;
-  padding: 12px 22px 16px;
+  padding: 12px 10px 16px;
   font-size: 26px;
   line-height: 26px; }
   .icon__nav--facebook:before {
     content: "";
-    color: #668e9d;
+    color: #60a5b7;
     display: inline-block; }
   .icon__nav--facebook:hover:before {
-    color: #3c5998; }
+    color: #4364aa; }
 .icon__nav--instagram {
   font-family: "icomoon" !important;
-  margin: 0 7px 0 0;
-  padding: 12px 22px 16px;
+  padding: 12px 10px 16px;
   font-size: 26px;
   line-height: 26px; }
   .icon__nav--instagram:before {
     content: "";
-    color: #668e9d;
+    color: #60a5b7;
     display: inline-block; }
   .icon__nav--instagram:hover:before {
-    color: #0177b5; }
+    color: #05a8fe; }
 .icon__nav--twitter {
   font-family: "icomoon" !important;
-  margin: 0 7px 0 0;
-  padding: 12px 22px 16px;
+  padding: 12px 10px 16px;
   font-size: 26px;
   line-height: 26px; }
   .icon__nav--twitter:before {
     content: "";
-    color: #668e9d;
+    color: #60a5b7;
     display: inline-block; }
   .icon__nav--twitter:hover:before {
-    color: #00aced; }
+    color: #3bc9ff; }
 .icon__nav--linkedin {
   font-family: "icomoon" !important;
-  margin: 0 7px 0 0;
-  padding: 12px 22px 16px;
+  padding: 12px 10px 16px;
   font-size: 26px;
   line-height: 26px; }
   .icon__nav--linkedin:before {
     content: "";
-    color: #668e9d;
+    color: #60a5b7;
     display: inline-block; }
   .icon__nav--linkedin:hover:before {
-    color: #d93175; }
-
-#about {
-  padding: 20px; }
+    color: #e572a0; }
 
 #hero {
   position: relative; }
@@ -196,6 +229,9 @@ nav {
     position: absolute;
     top: 20%;
     left: 20%; }
+
+#about {
+  padding: 20px; }
 
 #portfolio {
   padding: 20px; }
@@ -232,9 +268,28 @@ nav {
   .contact-form input:nth-of-type(4) {
     grid-area: form-subject; }
   .contact-form textarea {
-    grid-area: form-message; }
+    grid-area: form-message;
+    height: 200px; }
   .contact-form button {
     grid-area: form-submit; }
+  .contact-form__text-box {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 3px; }
+    .contact-form__text-box:focus::placeholder {
+      color: transparent; }
+  .contact-form__button {
+    background-color: #418092ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px;
+    text-align: center;
+    display: inline-block; }
+    .contact-form__button:hover {
+      background-color: #548e9eff; }
 
 .contact-container {
   padding: 20px;

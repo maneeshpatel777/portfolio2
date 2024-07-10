@@ -5,6 +5,7 @@
 
 .contact-form {
   display: contents; // to treat the elements as a direct child of the contact-container grid so grid template works correctly
+  // caret-color: grey; // changes blinking cursor
 
   input {
     &:nth-of-type(1) {
@@ -22,11 +23,46 @@
   }
   textarea {
     grid-area: form-message;
+    height: 200px;
   }
   button {
     grid-area: form-submit;
   }
+
+  @include e(text-box) {
+    //color: red;
+    padding: 5px;
+    //background-color: grey;
+    border: 1px solid black;
+    border-radius: 3px;
+
+    &:focus::placeholder {
+      color: transparent;
+    }
+  }
+
+  @include e(button) {
+    background-color: color(blue-munsell);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px;
+    text-align: center;
+    display: inline-block;
+
+    &:hover {
+      background-color: color(blue-munsell-2);
+    }
+  }
 }
+
+// blue-munsell: #478b9dff,
+// paynes-gray: #3c707fff,
+// moonstone: #7aaab8ff,
+// outer-space: #3c4443ff,
+// paynes-gray-2: #557a83ff
 
 .contact-container {
   padding: 20px;

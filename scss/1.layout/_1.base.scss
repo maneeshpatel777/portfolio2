@@ -1,3 +1,64 @@
+// cadet-gray: #939999ff,
+// paynes-gray: #3c707fff,
+// air-force-blue: #729199ff,
+// moonstone: #73a8b7ff,
+// moonstone-2: #619fb1ff,
+// paynes-gray-2: #5a7479ff,
+// blue-munsell: #418092ff,
+// blue-munsell-2: #548e9eff,
+// jet: #282826ff,
+// blue-munsell-3: #478b9dff
+
+h1 {
+  font-size: 2.5rem;
+  border-bottom: 2px solid color(moonstone);
+  padding-bottom: 0.3em;
+  // color: color(cadet-gray);
+  color: color(paynes-gray);
+  // color: color(air-force-blue);
+  // color: color(moonstone);
+  // color: color(moonstone-2);
+  // color: color(paynes-gray-2);
+  // color: color(blue-munsell);
+  // color: color(blue-munsell-2);
+  // color: color(blue-munsell-3);
+  // color: color(jet);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  border-bottom: 2px solid color(moonstone);
+  padding-bottom: 0.8rem;
+  margin-bottom: 1rem;
+  color: color(cadet-gray);
+  color: color(paynes-gray);
+  // color: color(air-force-blue);
+  // color: color(moonstone);
+  // color: color(moonstone-2);
+  // color: color(paynes-gray-2);
+  color: lighten(color(blue-munsell), 5%);
+  // color: color(blue-munsell-2);
+  // color: color(blue-munsell-3);
+  // color: color(jet);
+  // text-shadow: 0 0 1px color(jet);
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+p {
+  color: lighten(color(jet), 60%);
+  line-height: 1.6;
+}
+
+pre {
+  background-color: color(cadet-gray);
+  padding: 1em;
+  border-radius: 5px;
+}
+
 nav {
   grid-area: nav;
 }
@@ -40,4 +101,26 @@ body {
     "nav scs scs"
     "nav contact contact"
     "nav footer footer";
+
+  background: $gradient-top-darken;
+  background: $gradient-right-darken;
+  // background: $gradient-bottom-darken;
+  // background: $gradient-left-darken;
+  background: $gradient-top-darken; // good
+  // background: $gradient-top-right-darken;
+  // background: $gradient-bottom-right-darken;
+  // background: $gradient-top-left-darken;
+  // background: $gradient-bottom-left-darken;
+  // background: $gradient-radial-darken;
+
+  // background-color: color(cadet-gray);
+  // background-color: color(paynes-gray);
+  // background-color: color(air-force-blue);
+  // background-color: color(moonstone);
+  // background-color: color(moonstone-2);
+  // background-color: color(paynes-gray-2);
+  // background-color: color(blue-munsell);
+  // background-color: lighten(color(blue-munsell-2), 10%);
+  // background-color: color(jet);
+  // background-color: color(blue-munsell-3);
 }
