@@ -18,11 +18,14 @@
 
   h1 {
     text-transform: uppercase;
+    color: lighten(color(blue-munsell-3), 30%);
   }
 
   p {
     font-size: 1.5rem;
     text-transform: uppercase;
+
+    // margin-top: 500px;
   }
 
   .typing-text {
@@ -33,6 +36,30 @@
     margin: 0 auto;
     letter-spacing: 0.15em;
     animation: blink-caret 0.75s step-end infinite;
+  }
+
+  //   cadet-gray: #939999ff,
+  //   paynes-gray: #3c707fff,
+  //   air-force-blue: #729199ff,
+  //   moonstone: #73a8b7ff,
+  //   moonstone-2: #619fb1ff,
+  //   paynes-gray-2: #5a7479ff,
+  //   blue-munsell: #418092ff,
+  //   blue-munsell-2: #548e9eff,
+  //   jet: #282826ff,
+  //   blue-munsell-3: #478b9dff
+
+  #typing-text-1 {
+    // color: lighten(color(jet), 65%);
+    color: lighten(color(blue-munsell-3), 40%);
+  }
+  #typing-text-2 {
+    // color: lighten(color(jet), 70%);
+    color: lighten(color(blue-munsell-3), 35%);
+  }
+  #typing-text-3 {
+    // color: lighten(color(jet), 75%);
+    color: lighten(color(blue-munsell-3), 30%);
   }
 
   @keyframes blink-caret {

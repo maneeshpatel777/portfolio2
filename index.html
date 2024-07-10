@@ -6,131 +6,139 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <nav class="">
-      <p>M P</p>
-      <p><a href="#about">About Me</a></p>
-      <p><a href="#portfolio">My Portfolio</a></p>
-      <p><a href="#coding">Coding Examples</a></p>
-      <p><a href="#scs">SCS Scheme</a></p>
-      <p><a href="#contact">Contact Me</a></p>
+    <section id="nav-section">
+      <nav class="">
+        <h1><a href="#">M P</a></h1>
+        <p><a href="#about-section">About Me</a></p>
+        <p><a href="#portfolio-section">My Portfolio</a></p>
+        <p><a href="#coding-section">Coding Examples</a></p>
+        <p><a href="#scs-section">SCS Scheme</a></p>
+        <p><a href="#contact-section">Contact Me</a></p>
 
-      <div id="social-media">
-        <a href="#"><span class="icon__nav--facebook"></span></a>
-        <a href="#"><span class="icon__nav--instagram"></span></a>
-        <a href="#"><span class="icon__nav--twitter"></span></a>
-        <a href="#"><span class="icon__nav--linkedin"></span></a>
+        <div id="social-media">
+          <a href="#"><span class="icon__nav--facebook"></span></a>
+          <a href="#"><span class="icon__nav--instagram"></span></a>
+          <a href="#"><span class="icon__nav--twitter"></span></a>
+          <a href="#"><span class="icon__nav--linkedin"></span></a>
+        </div>
+      </nav>
+    </section>
+
+    <section id="hero-section">
+      <div id="hero">
+        <div>
+          <img src="assets/images/pexels-stywo-1054218.jpg" />
+        </div>
+        <div>
+          <h1>Maneesh Patel</h1>
+          <div><p id="typing-text-1" class="typing-text"></p></div>
+          <div><p id="typing-text-2" class="typing-text"></p></div>
+          <div><p id="typing-text-3" class="typing-text"></p></div>
+        </div>
       </div>
-    </nav>
+    </section>
 
-    <main>
-      <section>
-        <div id="hero">
-          <div>
-            <img src="assets/images/pexels-stywo-1054218.jpg" />
-          </div>
-          <div>
-            <h1>Maneesh Patel</h1>
-            <div><p id="typing-text-1" class="typing-text"></p></div>
-            <div><p id="typing-text-2" class="typing-text"></p></div>
-            <div><p id="typing-text-3" class="typing-text"></p></div>
-          </div>
+    <section id="about-section">
+      <h2>About Me</h2>
+      <p>Sed interdum est vel sollicitudin bibendum. Proin at accumsan nulla, non facilisis massa.</p>
+    </section>
+
+    <section id="coding-section">
+      <h2>Coding Examples</h2>
+      <p>Sed interdum est vel sollicitudin bibendum. Proin at accumsan nulla, non facilisis massa.</p>
+      <pre>
+        <code>
+          &lt;details id=&quot;burger-menu&quot;&gt;
+            &lt;summary class=&quot;btn-hamburger icon icon-hamburger&quot;&gt;&lt;/summary&gt;
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;h2&gt;&lt;a href=&quot;internal-pages/about-me.html&quot;&gt;About Me&lt;/a&gt;&lt;/h2&gt;
+                &lt;h2&gt;&lt;a href=&quot;#project-list&quot;&gt;My Portfolio&lt;/a&gt;&lt;/h2&gt;
+                &lt;h2&gt;&lt;a href=&quot;internal-pages/coding-examples.html&quot;&gt;Coding Examples&lt;/a&gt;&lt;/h2&gt;
+                &lt;h2&gt;&lt;a href=&quot;internal-pages/scs-scheme.html&quot;&gt;SCS Scheme&lt;/a&gt;&lt;/h2&gt;
+                &lt;div&gt;
+                    &lt;h2&gt;&lt;a href=&quot;#get-in-touch&quot;&gt;Contact Me&lt;/a&gt;&lt;/h2&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/details&gt;</code>
+      </pre>
+    </section>
+
+    <section id="scs-section">
+      <h2>SCS Scheme</h2>
+      <p>Sed interdum est vel sollicitudin bibendum. Proin at accumsan nulla, non facilisis massa.</p>
+    </section>
+
+    <section id="portfolio-section">
+      <h2>My Portfolio</h2>
+      <div class="portfolio-grid">
+        <div class="project">
+          <img src="assets/images/projectplaceholder.png" alt="Project One" />
+          <h3>Netmatters Site</h3>
+          <a href="https://maneeshpatel777.github.io/2ndattemptnetmatters/" class="view-project">View Project</a>
         </div>
-      </section>
-
-      <section id="about">
-        <h2>About Me</h2>
-        <p>Sed interdum est vel sollicitudin bibendum. Proin at accumsan nulla, non facilisis massa.</p>
-      </section>
-
-      <section id="portfolio">
-        <h2>My Portfolio</h2>
-        <div class="portfolio-grid">
-          <div class="project">
-            <img src="assets/images/projectplaceholder.png" alt="Project One" />
-            <h3>Netmatters Site</h3>
-            <a href="https://maneeshpatel777.github.io/2ndattemptnetmatters/" class="view-project">View Project</a>
-          </div>
-          <div class="project">
-            <img src="assets/images/projectplaceholder.png" alt="Project Two" />
-            <h3>Portfolio Site</h3>
-            <a href="https://maneeshpatel777.github.io/portfolio2/" class="view-project">View Project</a>
-          </div>
-          <div class="project">
-            <img src="assets/images/projectplaceholder.png" alt="Project Three" />
-            <h3>Project Three</h3>
-            <a href="#" class="view-project">View Project</a>
-          </div>
-          <div class="project">
-            <img src="assets/images/projectplaceholder.png" alt="Project Four" />
-            <h3>Project Four</h3>
-            <a href="#" class="view-project">View Project</a>
-          </div>
-          <div class="project">
-            <img src="assets/images/projectplaceholder.png" alt="Project Five" />
-            <h3>Project Five</h3>
-            <a href="#" class="view-project">View Project</a>
-          </div>
-          <div class="project">
-            <img src="assets/images/projectplaceholder.png" alt="Project Six" />
-            <h3>Project Six</h3>
-            <a href="#" class="view-project">View Project</a>
-          </div>
+        <div class="project">
+          <img src="assets/images/projectplaceholder.png" alt="Project Two" />
+          <h3>Portfolio Site</h3>
+          <a href="https://maneeshpatel777.github.io/portfolio2/" class="view-project">View Project</a>
         </div>
-      </section>
-
-      <section id="coding">
-        <h2>Coding Examples</h2>
-        <p>Sed interdum est vel sollicitudin bibendum. Proin at accumsan nulla, non facilisis massa.</p>
-        <pre>
-          <code>
-            &lt;details id=&quot;burger-menu&quot;&gt;
-              &lt;summary class=&quot;btn-hamburger icon icon-hamburger&quot;&gt;&lt;/summary&gt;
-              &lt;div class=&quot;container&quot;&gt;
-                  &lt;h2&gt;&lt;a href=&quot;internal-pages/about-me.html&quot;&gt;About Me&lt;/a&gt;&lt;/h2&gt;
-                  &lt;h2&gt;&lt;a href=&quot;#project-list&quot;&gt;My Portfolio&lt;/a&gt;&lt;/h2&gt;
-                  &lt;h2&gt;&lt;a href=&quot;internal-pages/coding-examples.html&quot;&gt;Coding Examples&lt;/a&gt;&lt;/h2&gt;
-                  &lt;h2&gt;&lt;a href=&quot;internal-pages/scs-scheme.html&quot;&gt;SCS Scheme&lt;/a&gt;&lt;/h2&gt;
-                  &lt;div&gt;
-                      &lt;h2&gt;&lt;a href=&quot;#get-in-touch&quot;&gt;Contact Me&lt;/a&gt;&lt;/h2&gt;
-                  &lt;/div&gt;
-              &lt;/div&gt;
-          &lt;/details&gt;</code>
-        </pre>
-      </section>
-
-      <section id="scs">
-        <h2>SCS Scheme</h2>
-        <p>Sed interdum est vel sollicitudin bibendum. Proin at accumsan nulla, non facilisis massa.</p>
-      </section>
-
-      <section id="contact">
-        <div class="contact-container">
-          <div class="contact-info">
-            <h2>Get In Touch</h2>
-            <h4>Mobile:</h4>
-            <p class="phone">77777 777777</p>
-            <h4>Email:</h4>
-            <p class="email">maneesh@netmatters.com</p>
-            <p></p>
-          </div>
-          <form class="contact-form">
-            <input type="text" placeholder="First Name*" class="contact-form__text-box" />
-            <input type="text" placeholder="Last Name*" class="contact-form__text-box" />
-            <input type="email" placeholder="Email Address*" class="contact-form__text-box" />
-            <input type="text" placeholder="Subject" class="contact-form__text-box" />
-            <textarea placeholder="Message" class="contact-form__text-box"></textarea>
-            <button type="submit" class="contact-form__button">Submit</button>
-          </form>
+        <div class="project">
+          <img src="assets/images/projectplaceholder.png" alt="Project Three" />
+          <h3>Project Three</h3>
+          <a href="#" class="view-project">View Project</a>
         </div>
-      </section>
-    </main>
+        <div class="project">
+          <img src="assets/images/projectplaceholder.png" alt="Project Four" />
+          <h3>Project Four</h3>
+          <a href="#" class="view-project">View Project</a>
+        </div>
+        <div class="project">
+          <img src="assets/images/projectplaceholder.png" alt="Project Five" />
+          <h3>Project Five</h3>
+          <a href="#" class="view-project">View Project</a>
+        </div>
+        <div class="project">
+          <img src="assets/images/projectplaceholder.png" alt="Project Six" />
+          <h3>Project Six</h3>
+          <a href="#" class="view-project">View Project</a>
+        </div>
+      </div>
+    </section>
 
-    <footer>
-      <a href="#" class="back-to-top">Back To Top</a>
-    </footer>
+    <section id="contact-section">
+      <h2>Get In Touch</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h4>Mobile:</h4>
+          <p class="phone">77777 777777</p>
+          <h4>Email:</h4>
+          <p class="email">maneesh@netmatters.com</p>
+          <p></p>
+        </div>
+        <form class="contact-form">
+          <input type="text" placeholder="First Name*" class="contact-form__text-box" />
+          <input type="text" placeholder="Last Name*" class="contact-form__text-box" />
+          <input type="email" placeholder="Email Address*" class="contact-form__text-box" />
+          <input type="text" placeholder="Subject" class="contact-form__text-box" />
+          <textarea placeholder="Message" class="contact-form__text-box"></textarea>
+          <button type="submit" class="contact-form__button">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="footer-section">
+      <footer>
+        <a href="#" class="back-to-top">Back To Top</a>
+      </footer>
+    </section>
 
     <script>
-      const texts = ["Web Developer", "Software Engineer", "UI/UX Designer"];
+      const texts = {
+        default: ["Web Developer", "Software Engineer", "UI/UX Designer"],
+        about: ["Passionate", "Creative", "Precision"],
+        coding: ["HTML/CSS/SASS", "JavaScript/.NET", "PHP/Lavarel/SQL"],
+        scs: ["Learning", "Growing", "Achieving"],
+      };
+
       let count = 0;
       let index = 0;
       let currentText = "";
@@ -138,33 +146,64 @@
       let cycle = 0;
       const typingElements = [document.getElementById("typing-text-1"), document.getElementById("typing-text-2"), document.getElementById("typing-text-3")];
 
+      let typeTimeout;
+      let backspaceTimeout;
+
+      function updateTexts() {
+        const hash = window.location.hash;
+        if (hash === "#about-section") {
+          return texts.about;
+        } else if (hash === "#coding-section") {
+          return texts.coding;
+        } else if (hash === "#scs-section") {
+          return texts.scs;
+        }
+        return texts.default;
+      }
+
+      function resetAnimation() {
+        // Clear any ongoing timeouts
+        clearTimeout(typeTimeout);
+        clearTimeout(backspaceTimeout);
+
+        count = 0;
+        index = 0;
+        cycle = 0;
+        typingElements.forEach((el) => {
+          el.textContent = "";
+          el.style.borderRight = "";
+        });
+        // Start typing immediately
+        type();
+      }
+
       function type() {
-        if (count === texts.length) {
+        const currentTexts = updateTexts();
+        if (count === currentTexts.length) {
           count = 0;
           cycle++;
           if (cycle === 2) {
-            return; // Stop after two cycles
+            return;
           }
         }
-        currentText = texts[count];
+        currentText = currentTexts[count];
         letter = currentText.slice(0, ++index);
 
         typingElements[count].textContent = letter;
 
         if (letter.length === currentText.length) {
           if (cycle === 0) {
-            setTimeout(backspace, 1500); // Pause before backspacing in first cycle
+            backspaceTimeout = setTimeout(backspace, 1500);
           } else {
             if (count < 2) {
-              // Stop cursor blinking for the first and second lines immediately after typing
               typingElements[count].style.borderRight = "none";
             }
             count++;
             index = 0;
-            setTimeout(type, 500); // Move to next word in second cycle
+            typeTimeout = setTimeout(type, 500);
           }
         } else {
-          setTimeout(type, 100); // Typing speed
+          typeTimeout = setTimeout(type, 100);
         }
       }
 
@@ -172,16 +211,18 @@
         if (index > 0) {
           letter = currentText.slice(0, --index);
           typingElements[count].textContent = letter;
-          setTimeout(backspace, 33); // Backspace speed (3x faster than typing)
+          backspaceTimeout = setTimeout(backspace, 33);
         } else {
           count++;
           index = 0;
-          setTimeout(type, 500); // Pause before typing next word
+          typeTimeout = setTimeout(type, 500);
         }
       }
 
-      // Start the animation with a delay
-      setTimeout(type, 2000);
+      // Start the initial animation
+      typeTimeout = setTimeout(type, 2000);
+
+      window.addEventListener("hashchange", resetAnimation);
     </script>
   </body>
 </html>

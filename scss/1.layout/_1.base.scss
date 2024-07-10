@@ -16,8 +16,10 @@ textarea::placeholder {
 
 h1 {
   font-size: 2.5rem;
+  // font-weight: 400;
   border-bottom: 2px solid darken(color(moonstone), 12%);
-  padding-bottom: 0.3em;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
   // color: color(cadet-gray);
   color: color(paynes-gray);
   // color: color(air-force-blue);
@@ -36,6 +38,7 @@ h2 {
   border-bottom: 2px solid color(moonstone);
   padding-bottom: 0.8rem;
   margin-bottom: 1rem;
+
   color: color(cadet-gray);
   color: color(paynes-gray);
   // color: color(air-force-blue);
@@ -65,35 +68,34 @@ pre {
   border-radius: 5px;
 }
 
-nav {
+#nav-section {
   grid-area: nav;
 }
-
-#hero {
+#hero-section {
   grid-area: hero;
 }
 
-#about {
+#about-section {
   grid-area: about;
 }
 
-#portfolio {
+#portfolio-section {
   grid-area: portfolio;
 }
 
-#coding {
+#coding-section {
   grid-area: coding;
 }
 
-#scs {
+#scs-section {
   grid-area: scs;
 }
 
-#contact {
+#contact-section {
   grid-area: contact;
 }
 
-footer {
+#footer-section {
   grid-area: footer;
 }
 
@@ -130,4 +132,55 @@ body {
   // background-color: lighten(color(blue-munsell-2), 10%);
   // background-color: color(jet);
   // background-color: color(blue-munsell-3);
+}
+
+// Finally got sections of the same page to work, but you need to have the html in the right order, had to take out main, nest them in the nav section, and move porfolio to the bottom
+
+// Hide all sections by default
+section {
+  display: none;
+}
+
+// Initially display nav, hero, footer, portfolio, contact sections
+#nav-section,
+#hero-section,
+#footer-section,
+#portfolio-section,
+#contact-section {
+  display: block;
+}
+
+// Show about, coding, or scs sections when targeted
+#about-section:target,
+#coding-section:target,
+#scs-section:target {
+  display: block;
+}
+
+// Hide portfolio and contact when about, coding, or scs are targeted
+#about-section:target ~ #portfolio-section,
+#about-section:target ~ #contact-section,
+#coding-section:target ~ #portfolio-section,
+#coding-section:target ~ #contact-section,
+#scs-section:target ~ #portfolio-section,
+#scs-section:target ~ #contact-section {
+  display: none;
+}
+
+// Show portfolio and contact when either is targeted
+#portfolio-section:target,
+#contact-section:target,
+#portfolio-section:target ~ #contact-section,
+#contact-section:target ~ #portfolio-section {
+  display: block;
+}
+
+// Ensure other sections are hidden when portfolio or contact is targeted
+#portfolio-section:target ~ #about-section,
+#portfolio-section:target ~ #coding-section,
+#portfolio-section:target ~ #scs-section,
+#contact-section:target ~ #about-section,
+#contact-section:target ~ #coding-section,
+#contact-section:target ~ #scs-section {
+  display: none;
 }

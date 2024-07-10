@@ -1,3 +1,7 @@
+#contact-section {
+  padding: 20px;
+}
+
 .contact-info {
   grid-area: info;
   display: table; // this or display inline-table is the only way to make this start from the top left, otherwise it centers it automatically and even flex doesn't fix it

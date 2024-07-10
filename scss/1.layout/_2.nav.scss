@@ -41,7 +41,7 @@
 // $gradient-bottom-left-darken: linear-gradient(315deg, darken(#939999ff, 10%), darken(#3c707fff, 10%), darken(#729199ff, 10%), darken(#73a8b7ff, 10%), darken(#619fb1ff, 10%), darken(#5a7479ff, 10%), darken(#418092ff, 10%), darken(#548e9eff, 10%), darken(#478b9dff, 10%));
 // $gradient-radial-darken: radial-gradient(darken(#939999ff, 10%), darken(#3c707fff, 10%), darken(#729199ff, 10%), darken(#73a8b7ff, 10%), darken(#619fb1ff, 10%), darken(#5a7479ff, 10%), darken(#418092ff, 10%), darken(#548e9eff, 10%), darken(#478b9dff, 10%));
 
-nav {
+#nav-section {
   border-right: 2px solid darken(color(blue-munsell-3), 15%);
   //   background: $gradient-top-darken;
   //   background: $gradient-right-darken;
@@ -54,18 +54,24 @@ nav {
   //   background: $gradient-radial-darken;
   width: 250px;
 
-  p {
-    text-align: center;
-
-    color: lighten(color(blue-munsell-3), 12%);
-    padding: 10px 0;
-
+  h1 {
     &:first-of-type {
       font-size: 3rem;
       color: color(moonstone);
       border-bottom: 2px solid darken(color(blue-munsell-3), 13%);
       padding: 50px 0;
+      text-align: center;
+      a {
+        font-size: 3rem;
+      }
     }
+  }
+
+  p {
+    text-align: center;
+
+    color: lighten(color(blue-munsell-3), 12%);
+    padding: 10px 0;
 
     &:last-of-type {
       border-top: 2px solid darken(color(blue-munsell-3), 15%);
