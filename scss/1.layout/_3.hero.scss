@@ -5,7 +5,7 @@
     width: 100%;
   }
 
-  div {
+  > div {
     &:first-child {
       position: relative;
     }
@@ -13,6 +13,35 @@
       position: absolute;
       top: 20%;
       left: 20%;
+    }
+  }
+
+  h1 {
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  .typing-text {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 0.1rem solid;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: blink-caret 0.75s step-end infinite;
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: lighten(color(jet), 50%);
     }
   }
 }

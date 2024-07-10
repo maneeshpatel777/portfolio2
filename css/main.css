@@ -111,7 +111,8 @@ h3 {
 
 p {
   color: #c2c2be;
-  line-height: 1.6; }
+  line-height: 1.6;
+  font-size: 1rem; }
 
 pre {
   background-color: #939999ff;
@@ -223,13 +224,31 @@ nav {
   position: relative; }
   #hero img {
     width: 100%; }
-  #hero div:first-child {
+  #hero > div:first-child {
     position: relative; }
-  #hero div:last-child {
+  #hero > div:last-child {
     position: absolute;
     top: 20%;
     left: 20%; }
-
+  #hero h1 {
+    text-transform: uppercase; }
+  #hero p {
+    font-size: 1.5rem;
+    text-transform: uppercase; }
+  #hero .typing-text {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 0.1rem solid;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: blink-caret 0.75s step-end infinite; }
+@keyframes blink-caret {
+  from,
+    to {
+    border-color: transparent; }
+  50% {
+    border-color: #a9a9a4; } }
 #about {
   padding: 20px; }
 
