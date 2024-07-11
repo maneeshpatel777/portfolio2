@@ -309,21 +309,48 @@ section {
 #hero {
   position: relative; }
   #hero img {
-    width: 100vw; }
+    height: 100vh;
+    width: 100%;
+    object-fit: cover; }
+    @media (min-width: 1px) and (max-width: 767px) {
+      #hero img {
+        object-position: 60% 50%; } }
   #hero > div:first-child {
     position: relative; }
   #hero > div:last-child {
     position: absolute;
-    top: 20%;
-    left: 20%; }
+    top: 15%;
+    left: 10%; }
   #hero h1 {
     text-transform: uppercase;
     color: #a6cdd7;
     font-size: 3vw; }
+    @media (min-width: 1px) and (max-width: 767px) {
+      #hero h1 {
+        font-size: 2rem; } }
+    @media (min-width: 768px) {
+      #hero h1 {
+        font-size: 3rem; } }
+    @media (min-width: 992px) {
+      #hero h1 {
+        font-size: 5rem; } }
+    @media (min-width: 1260px) {
+      #hero h1 {
+        font-size: 5rem; } }
   #hero p {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-size: 1.9vw; }
+    text-transform: uppercase; }
+    @media (min-width: 1px) and (max-width: 767px) {
+      #hero p {
+        font-size: 1rem; } }
+    @media (min-width: 768px) {
+      #hero p {
+        font-size: 2rem; } }
+    @media (min-width: 992px) {
+      #hero p {
+        font-size: 3rem; } }
+    @media (min-width: 1260px) {
+      #hero p {
+        font-size: 3rem; } }
   #hero .typing-text {
     display: inline-block;
     overflow: hidden;
