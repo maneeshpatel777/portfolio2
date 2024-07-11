@@ -100,16 +100,16 @@ pre {
 }
 
 body {
-  display: grid;
+  // display: grid;
 
-  grid-template-areas:
-    "hero hero"
-    "about about"
-    "portfolio portfolio"
-    "coding coding"
-    "scs scs"
-    "contact contact"
-    "footer footer";
+  // grid-template-areas:
+  //   "hero hero"
+  //   "about about"
+  //   "portfolio portfolio"
+  //   "coding coding"
+  //   "scs scs"
+  //   "contact contact"
+  //   "footer footer";
 
   // background: $gradient-top-darken;
   // background: $gradient-right-darken;
@@ -140,6 +140,7 @@ body {
 section {
   display: none;
   scroll-margin-top: 1000vh !important; // to prevent going down to the section.
+  width: 100vw;
 }
 
 // Initially display nav, hero, footer, portfolio, contact sections
