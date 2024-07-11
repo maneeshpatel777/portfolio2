@@ -60,10 +60,11 @@ div {
 
 // Added this later, thought it was going to be a disaster, but it didn't screw up my navbar thankfully, and once I learned how to stretch things past the margin, site looks better
 .container {
-  // margin-right: auto;
-  // margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
   // padding-left: 15px;
   // padding-right: 15px;
+  padding: 20px;
 
   @include mq("small") {
     width: 750px;
