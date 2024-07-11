@@ -124,9 +124,6 @@ pre {
   padding: 1em;
   border-radius: 5px; }
 
-#nav-section {
-  grid-area: nav; }
-
 #hero-section {
   grid-area: hero; }
 
@@ -150,11 +147,12 @@ pre {
 
 body {
   display: grid;
-  grid-template-areas: "nav hero hero" "nav about about" "nav portfolio portfolio" "nav coding coding" "nav scs scs" "nav contact contact" "nav footer footer";
+  grid-template-areas: "hero hero" "about about" "portfolio portfolio" "coding coding" "scs scs" "contact contact" "footer footer";
   background: linear-gradient(0deg, #798080, #2c515c, #455a60, #315560, #4a8495, #44585c, #31616f, #42707d, #376c7a); }
 
 section {
-  display: none; }
+  display: none;
+  scroll-margin-top: 1000vh !important; }
 
 #nav-section,
 #hero-section,
@@ -191,6 +189,9 @@ section {
   display: none; }
 
 #nav-section {
+  position: fixed;
+  z-index: 1000;
+  height: 100vh;
   border-right: 2px solid #2f5c68;
   background: linear-gradient(315deg, #798080, #2c515c, #455a60, #315560, #417584, #44585c, #31616f, #42707d, #376c7a);
   width: 250px; }
@@ -213,6 +214,50 @@ section {
       font-size: 1.3rem; }
       #nav-section p a:hover {
         border-bottom: 3px solid #548e9eff; }
+
+#nav-ham-menu {
+  position: fixed;
+  right: 5px;
+  z-index: 1000; }
+
+.off-screen-menu {
+  top: 0;
+  right: -250px;
+  transition: 0.3s ease; }
+
+.off-screen-menu.active {
+  right: 0 !important; }
+
+.ham-menu {
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  position: relative;
+  z-index: 1001; }
+  .ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #478b9dff;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease; }
+    .ham-menu span:nth-child(1) {
+      top: 25%; }
+    .ham-menu span:nth-child(3) {
+      top: 75%; }
+  .ham-menu.active span {
+    background-color: #548e9eff; }
+    .ham-menu.active span:nth-child(1) {
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(45deg); }
+    .ham-menu.active span:nth-child(2) {
+      opacity: 0; }
+    .ham-menu.active span:nth-child(3) {
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg); }
 
 #social-media {
   margin-top: 30px;

@@ -6,24 +6,32 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <section id="nav-section">
+    <section id="nav-section" class="off-screen-menu">
       <nav class="">
-        <h1><a href="#">M P</a></h1>
-        <p><a href="#about-section">About Me</a></p>
-        <p><a href="#portfolio-section">My Portfolio</a></p>
-        <p><a href="#coding-section">Coding Examples</a></p>
-        <p><a href="#scs-section">SCS Scheme</a></p>
-        <p><a href="#contact-section">Contact Me</a></p>
+        <div class="">
+          <h1><a href="#">M P</a></h1>
+          <p><a href="#about-section">About Me</a></p>
+          <p><a href="#portfolio-section">My Portfolio</a></p>
+          <p><a href="#coding-section">Coding Examples</a></p>
+          <p><a href="#scs-section">SCS Scheme</a></p>
+          <p><a href="#contact-section">Contact Me</a></p>
 
-        <div id="social-media">
-          <a href="#"><span class="icon__nav--facebook"></span></a>
-          <a href="#"><span class="icon__nav--instagram"></span></a>
-          <a href="#"><span class="icon__nav--twitter"></span></a>
-          <a href="#"><span class="icon__nav--linkedin"></span></a>
+          <div id="social-media">
+            <a href="#"><span class="icon__nav--facebook"></span></a>
+            <a href="#"><span class="icon__nav--instagram"></span></a>
+            <a href="#"><span class="icon__nav--twitter"></span></a>
+            <a href="#"><span class="icon__nav--linkedin"></span></a>
+          </div>
         </div>
       </nav>
     </section>
-
+    <nav id="nav-ham-menu">
+      <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
     <section id="hero-section">
       <div id="hero">
         <div>
@@ -223,6 +231,15 @@
       typeTimeout = setTimeout(type, 2000);
 
       window.addEventListener("hashchange", resetAnimation);
+    </script>
+    <script>
+      const hamMenu = document.querySelector(".ham-menu");
+      const offScreenMenu = document.querySelector(".off-screen-menu");
+
+      hamMenu.addEventListener("click", () => {
+        hamMenu.classList.toggle("active");
+        offScreenMenu.classList.toggle("active");
+      });
     </script>
   </body>
 </html>

@@ -68,9 +68,9 @@ pre {
   border-radius: 5px;
 }
 
-#nav-section {
-  grid-area: nav;
-}
+// #nav-section {
+//   grid-area: nav;
+// }
 #hero-section {
   grid-area: hero;
 }
@@ -103,13 +103,13 @@ body {
   display: grid;
 
   grid-template-areas:
-    "nav hero hero"
-    "nav about about"
-    "nav portfolio portfolio"
-    "nav coding coding"
-    "nav scs scs"
-    "nav contact contact"
-    "nav footer footer";
+    "hero hero"
+    "about about"
+    "portfolio portfolio"
+    "coding coding"
+    "scs scs"
+    "contact contact"
+    "footer footer";
 
   // background: $gradient-top-darken;
   // background: $gradient-right-darken;
@@ -139,6 +139,7 @@ body {
 // Hide all sections by default
 section {
   display: none;
+  scroll-margin-top: 1000vh !important; // to prevent going down to the section.
 }
 
 // Initially display nav, hero, footer, portfolio, contact sections
