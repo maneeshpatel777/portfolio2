@@ -3,11 +3,11 @@
 }
 
 .portfolio-grid {
+  display: grid;
   gap: 20px;
   margin-top: 20px; // Add some space between the title and the grid
 
   @include mq(small) {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 }

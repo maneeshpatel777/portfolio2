@@ -11,28 +11,31 @@
         <nav class="">
           <div class="">
             <h1><a href="#">M P</a></h1>
-            <p><a href="#about-section">About Me</a></p>
-            <p><a href="#portfolio-section">My Portfolio</a></p>
-            <p><a href="#coding-section">Coding Examples</a></p>
-            <p><a href="#scs-section">SCS Scheme</a></p>
-            <p><a href="#contact-section">Contact Me</a></p>
-
-            <div id="social-media">
-              <a href="#"><span class="icon__nav--facebook"></span></a>
-              <a href="#"><span class="icon__nav--instagram"></span></a>
-              <a href="#"><span class="icon__nav--twitter"></span></a>
-              <a href="#"><span class="icon__nav--linkedin"></span></a>
+            <div class="nav-row">
+              <p><a href="#about-section">About Me</a></p>
+              <p><a href="#portfolio-section">My Portfolio</a></p>
+              <p><a href="#coding-section">Coding Examples</a></p>
+              <p><a href="#scs-section">SCS Scheme</a></p>
+            </div>
+            <div class="social-row">
+              <p><a href="#contact-section">Contact Me</a></p>
+              <!-- <div id="social-media">
+                <a href="#"><span class="icon__nav--facebook"></span></a>
+                <a href="#"><span class="icon__nav--instagram"></span></a>
+                <a href="#"><span class="icon__nav--twitter"></span></a>
+                <a href="#"><span class="icon__nav--linkedin"></span></a>
+              </div> -->
             </div>
           </div>
         </nav>
+        <nav id="nav-ham-menu">
+          <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
       </section>
-      <nav id="nav-ham-menu">
-        <div class="ham-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
 
       <section id="hero-section">
         <div id="hero">
@@ -41,6 +44,7 @@
           </picture>
           <div>
             <h1>Maneesh Patel</h1>
+
             <div><p id="typing-text-1" class="typing-text"></p></div>
             <div><p id="typing-text-2" class="typing-text"></p></div>
             <div><p id="typing-text-3" class="typing-text"></p></div>
@@ -53,10 +57,13 @@
         <p>Sed interdum est vel sollicitudin bibendum. Proin at accumsan nulla, non facilisis massa.</p>
       </section>
 
-      <section id="coding-section" class="container">
-        <h2>Coding Examples</h2>
-        <p>Sed interdum est vel sollicitudin bibendum. Proin at accumsan nulla, non facilisis massa.</p>
-        <pre>
+      <section id="coding-section">
+        <div class="container">
+          <h2>Coding Examples</h2>
+          <p>Sed interdum est vel sollicitudin bibendum. Proin at accumsan nulla, non facilisis massa.</p>
+        </div>
+        <div class="coding-snippet">
+          <pre>
         <code>
           &lt;details id=&quot;burger-menu&quot;&gt;
             &lt;summary class=&quot;btn-hamburger icon icon-hamburger&quot;&gt;&lt;/summary&gt;
@@ -70,7 +77,8 @@
                 &lt;/div&gt;
             &lt;/div&gt;
         &lt;/details&gt;</code>
-      </pre>
+        </pre>
+        </div>
       </section>
 
       <section id="scs-section" class="container">
@@ -82,32 +90,32 @@
         <h2>My Portfolio</h2>
         <div class="portfolio-grid">
           <div class="project">
-            <img src="assets/images/projectplaceholder.png" alt="Project One" />
+            <img src="assets/images/netmatters-cropped.png" alt="Project One" />
             <h3>Netmatters Site</h3>
             <a href="https://maneeshpatel777.github.io/2ndattemptnetmatters/" class="view-project">View Project</a>
           </div>
           <div class="project">
-            <img src="assets/images/projectplaceholder.png" alt="Project Two" />
+            <img src="assets/images/portfolio.png" alt="Project Two" />
             <h3>Portfolio Site</h3>
             <a href="https://maneeshpatel777.github.io/portfolio2/" class="view-project">View Project</a>
           </div>
           <div class="project">
-            <img src="assets/images/projectplaceholder.png" alt="Project Three" />
+            <img src="assets/images/netmatters-cropped.png" alt="Project Three" />
             <h3>Project Three</h3>
             <a href="#" class="view-project">View Project</a>
           </div>
           <div class="project">
-            <img src="assets/images/projectplaceholder.png" alt="Project Four" />
+            <img src="assets/images/netmatters-cropped.png" alt="Project Four" />
             <h3>Project Four</h3>
             <a href="#" class="view-project">View Project</a>
           </div>
           <div class="project">
-            <img src="assets/images/projectplaceholder.png" alt="Project Five" />
+            <img src="assets/images/netmatters-cropped.png" alt="Project Five" />
             <h3>Project Five</h3>
             <a href="#" class="view-project">View Project</a>
           </div>
           <div class="project">
-            <img src="assets/images/projectplaceholder.png" alt="Project Six" />
+            <img src="assets/images/netmatters-cropped.png" alt="Project Six" />
             <h3>Project Six</h3>
             <a href="#" class="view-project">View Project</a>
           </div>
@@ -234,13 +242,25 @@
 
         window.addEventListener("hashchange", resetAnimation);
       </script>
+
       <script>
         const hamMenu = document.querySelector(".ham-menu");
         const offScreenMenu = document.querySelector(".off-screen-menu");
+        const navLinks = document.querySelectorAll("#nav-section a");
+        const body = document.body;
 
         hamMenu.addEventListener("click", () => {
           hamMenu.classList.toggle("active");
           offScreenMenu.classList.toggle("active");
+          body.classList.toggle("blur");
+        });
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            hamMenu.classList.remove("active");
+            offScreenMenu.classList.remove("active");
+            body.classList.remove("blur");
+          });
         });
       </script>
     </body>

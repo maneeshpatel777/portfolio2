@@ -1,7 +1,33 @@
 #coding-section {
-  // padding: 20px;
+}
+
+.coding-snippet {
+  display: flex;
+  justify-content: center;
 
   pre {
     border: 1px solid #000;
+    margin-top: 10px;
+    white-space: pre-line;
+    code {
+      font-size: small;
+    }
+  }
+
+  @include mq(small) {
+    pre {
+      white-space: pre;
+      code {
+        font-size: normal;
+      }
+    }
+  }
+
+  @include mq(medium) {
+    pre {
+      code {
+        font-size: large;
+      }
+    }
   }
 }
