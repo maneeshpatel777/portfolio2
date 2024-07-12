@@ -9,11 +9,6 @@
 // jet: #282826ff,
 // blue-munsell-3: #478b9dff
 
-input::placeholder,
-textarea::placeholder {
-  color: lighten(color(jet), 40%);
-}
-
 h1 {
   font-size: 2.5rem;
   // font-weight: 400;
@@ -70,21 +65,23 @@ h3 {
   margin-top: 1rem;
 
   // color: color(cadet-gray);
-  // color: color(paynes-gray);
+  color: lighten(color(paynes-gray), 5%);
   // color: color(air-force-blue);
   // color: color(moonstone);
   // color: color(moonstone-2);
   // color: color(paynes-gray-2);
   // color: lighten(color(blue-munsell), 5%);
   // color: color(blue-munsell-2);
-  color: lighten(color(blue-munsell-3), 10%);
+  // color: lighten(color(blue-munsell-3), 10%);
 
   // color: hsl(188, 39%, 47%);
   // color: lighten(color(blue-munsell-3), 6%);
 }
 
-a {
-  // text-decoration: none;
+h4 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 
   // color: color(cadet-gray);
   // color: color(paynes-gray);
@@ -94,7 +91,25 @@ a {
   // color: color(paynes-gray-2);
   // color: lighten(color(blue-munsell), 5%);
   // color: color(blue-munsell-2);
-  color: lighten(color(blue-munsell-3), 10%);
+  // color: lighten(color(blue-munsell-3), 10%);
+
+  // color: hsl(188, 39%, 47%);
+  // color: lighten(color(blue-munsell-3), 6%);
+  color: lighten(color(paynes-gray), 5%);
+}
+
+a {
+  // text-decoration: none;
+
+  color: color(cadet-gray);
+  // color: color(paynes-gray);
+  // color: color(air-force-blue);
+  // color: color(moonstone);
+  // color: color(moonstone-2);
+  // color: color(paynes-gray-2);
+  // color: lighten(color(blue-munsell), 5%);
+  // color: color(blue-munsell-2);
+  //color: lighten(color(blue-munsell-3), 10%);
 
   // color: rgb(69, 155, 181);
 
@@ -191,7 +206,7 @@ body {
 // Hide all sections by default
 section {
   display: none;
-  display: block; // temp for styling
+  // display: block; // temp for styling
 
   scroll-margin-top: 1000vh !important; // to prevent going down to the section.
   width: 100vw;

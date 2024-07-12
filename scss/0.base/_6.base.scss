@@ -56,6 +56,7 @@ div {
   margin-right: auto;
   margin-left: auto;
   padding: 20px;
+  margin-top: 15px;
 
   @include mq("small") {
     width: 750px;

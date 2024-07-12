@@ -72,7 +72,8 @@ div {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding: 20px; }
+  padding: 20px;
+  margin-top: 15px; }
   @media (min-width: 768px) {
     .container {
       width: 750px;
@@ -83,10 +84,6 @@ div {
   @media (min-width: 1260px) {
     .container {
       width: 1200px; } }
-
-input::placeholder,
-textarea::placeholder {
-  color: #90908a; }
 
 h1 {
   font-size: 2.5rem;
@@ -115,10 +112,16 @@ h2 {
 h3 {
   font-size: 1.75rem;
   margin-top: 1rem;
-  color: #60a5b7; }
+  color: #447f90; }
+
+h4 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #447f90; }
 
 a {
-  color: #60a5b7; }
+  color: #939999ff; }
 
 p {
   color: #c2c2be;
@@ -156,7 +159,6 @@ body {
 
 section {
   display: none;
-  display: block;
   scroll-margin-top: 1000vh !important;
   width: 100vw; }
 
@@ -204,7 +206,6 @@ section {
   position: fixed;
   z-index: 1000;
   height: 100vh;
-  border-left: 2px solid #1f3d45;
   background-color: #282826;
   width: 250px; }
   #nav-section .social-row {
@@ -215,34 +216,38 @@ section {
       height: auto;
       width: 100%;
       border-left: none;
-      border-bottom: 2px solid #1f3d45;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 10px; }
+      #nav-section a:hover {
+        border-bottom: none !important; }
       #nav-section h1:first-of-type {
         font-size: 2rem;
         padding: 30px !important;
         margin-bottom: 10px;
         text-align: center;
-        border-bottom: none; }
+        border-bottom: none !important; }
+        #nav-section h1:first-of-type a {
+          border-bottom: 2px solid #1f3d45; }
       #nav-section .nav-row {
         display: flex;
         justify-content: center;
         margin-bottom: 10px; }
         #nav-section .nav-row p {
-          margin: 0 10px; }
-          #nav-section .nav-row p:last-of-type {
-            border: none; }
+          margin: 0 10px;
+          padding: 10px 10px; }
       #nav-section .social-row {
         display: flex;
         justify-content: center;
         align-items: center;
+        border-top: none;
         border-bottom: none; }
         #nav-section .social-row p {
           margin: 0 10px; }
           #nav-section .social-row p:last-of-type {
-            border: none; }
+            border: none;
+            border-bottom: 1px solid #1f3d45; }
         #nav-section .social-row #social-media {
           margin-top: 0; } }
   #nav-section h1:first-of-type {
@@ -252,13 +257,15 @@ section {
     padding: 50px 0;
     text-align: center; }
     #nav-section h1:first-of-type a {
+      color: #60a5b7;
       font-size: 3rem; }
   #nav-section p {
     text-align: center;
     color: #67a9ba;
     padding: 10px 0; }
     #nav-section p a {
-      font-size: 1.3rem; }
+      font-size: 1.3rem;
+      color: #60a5b7; }
       #nav-section p a:hover {
         border-bottom: 3px solid #548e9eff; }
 
@@ -435,8 +442,11 @@ section {
     .portfolio-grid {
       grid-template-columns: repeat(3, 1fr); } }
 
-.project img {
-  max-width: 100%; }
+.project-image {
+  position: relative; }
+  .project-image img {
+    width: 100%;
+    object-fit: cover; }
 
 .coding-snippet {
   display: flex;
@@ -480,7 +490,7 @@ section {
     grid-area: form-submit; }
   .contact-form__text-box {
     padding: 5px;
-    border: 1px solid black;
+    border: 1px solid #5c5c58;
     border-radius: 3px; }
     .contact-form__text-box:focus::placeholder {
       color: transparent; }
@@ -496,6 +506,18 @@ section {
     display: inline-block; }
     .contact-form__button:hover {
       background-color: #548e9eff; }
+
+input {
+  color: #c2c2be;
+  font-size: 1.25rem; }
+  input::placeholder {
+    color: #90908a; }
+
+textarea {
+  color: #c2c2be;
+  font-size: 1.25rem; }
+  textarea::placeholder {
+    color: #90908a; }
 
 @media (min-width: 1px) and (max-width: 767px) {
   .contact-container {
