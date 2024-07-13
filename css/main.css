@@ -157,6 +157,10 @@ pre {
 body {
   background-color: #282826; }
 
+.no-scroll {
+  overflow: hidden;
+  height: 100%; }
+
 section {
   display: none;
   scroll-margin-top: 1000vh !important;
@@ -180,20 +184,6 @@ section {
 #coding-section:target ~ #contact-section,
 #scs-section:target ~ #portfolio-section,
 #scs-section:target ~ #contact-section {
-  display: none; }
-
-#portfolio-section:target,
-#contact-section:target,
-#portfolio-section:target ~ #contact-section,
-#contact-section:target ~ #portfolio-section {
-  display: block; }
-
-#portfolio-section:target ~ #about-section,
-#portfolio-section:target ~ #coding-section,
-#portfolio-section:target ~ #scs-section,
-#contact-section:target ~ #about-section,
-#contact-section:target ~ #coding-section,
-#contact-section:target ~ #scs-section {
   display: none; }
 
 body.blur section:not(#nav-section) {

@@ -201,6 +201,11 @@ body {
   // background-color: color(blue-munsell-3);
 }
 
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
 // Finally got sections of the same page to work, but you need to have the html in the right order, had to take out main, nest them in the nav section, and move porfolio to the bottom
 
 // Hide all sections by default
@@ -238,20 +243,20 @@ section {
   display: none;
 }
 
-// Show portfolio and contact when either is targeted
-#portfolio-section:target,
-#contact-section:target,
-#portfolio-section:target ~ #contact-section,
-#contact-section:target ~ #portfolio-section {
-  display: block;
-}
+// // Show portfolio and contact when either is targeted // This defaults to the initial load so not needed.
+// #portfolio-section:target,
+// #contact-section:target,
+// #portfolio-section:target ~ #contact-section,
+// #contact-section:target ~ #portfolio-section {
+//   display: block;
+// }
 
-// Ensure other sections are hidden when portfolio or contact is targeted
-#portfolio-section:target ~ #about-section,
-#portfolio-section:target ~ #coding-section,
-#portfolio-section:target ~ #scs-section,
-#contact-section:target ~ #about-section,
-#contact-section:target ~ #coding-section,
-#contact-section:target ~ #scs-section {
-  display: none;
-}
+// Ensures other sections are hidden when portfolio or contact is targeted
+// #portfolio-section:target ~ #about-section,
+// #portfolio-section:target ~ #coding-section,
+// #portfolio-section:target ~ #scs-section,
+// #contact-section:target ~ #about-section,
+// #contact-section:target ~ #coding-section,
+// #contact-section:target ~ #scs-section {
+//   display: none;
+// }
