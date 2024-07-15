@@ -233,7 +233,8 @@ section {
 .off-screen-menu {
   top: 0;
   right: -200%;
-  transition: 0.3s ease; }
+  transition: 0.3s ease;
+  overflow-y: auto; }
 
 .off-screen-menu.active {
   right: 0 !important;
