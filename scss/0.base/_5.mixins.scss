@@ -54,7 +54,7 @@
 
 @mixin mq($break) {
   @if $break == "xsmall" {
-    @media (min-width: $brkpoint-xsm) and (max-width: $brkpoint-sm) {
+    @media (min-width: $brkpoint-xsm) and (max-width: $brkpoint-sm) and (pointer: coarse) {
       @content;
     }
   } @else if $break == "small" {

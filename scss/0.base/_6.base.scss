@@ -19,6 +19,10 @@ code {
 }
 
 html {
+  @include mq(xsmall) {
+    // keeps font size the same when zooming in on mobile
+    font-size: 2.15vh;
+  }
 }
 
 body {

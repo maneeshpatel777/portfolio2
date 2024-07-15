@@ -42,7 +42,6 @@
   h1 {
     text-transform: uppercase;
     color: lighten(color(blue-munsell-3), 30%);
-    font-size: 3vw;
 
     @include mq(xsmall) {
       // font-size: 6.6vw;
