@@ -4,6 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Maneesh Patel's Portfolio</title>
     <link rel="stylesheet" href="css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script> -->
   </head>
   <div>
     <body>
@@ -84,6 +87,30 @@
       <section id="scs-section" class="container">
         <h2>SCS Scheme</h2>
         <p>Sed interdum est vel sollicitudin bibendum. Proin at accumsan nulla, non facilisis massa.</p>
+        <h3>Introduction to Scion Coalition Scheme</h3>
+        <p>
+          The Scion Coalition Scheme is an intensive, specially tailored training program run by Netmatters in order to give willing candidates the opportunity to enter the industry as web developers.
+          Under the supervision of senior web developers, scions generally aim to complete training within six to nine months. The course is intensive and therefore the level of learning achieved is
+          extensive in a short space of time.
+        </p>
+
+        <h3>Treehouse</h3>
+
+        <p>
+          Treehouse is an online learning community, featuring videos covering a number of topics from basic HTML to C# programming, iOS development, data analysis, and more. By completing courses
+          users can earn points, allowing them to track their progress and see how much they've covered in certain areas.
+        </p>
+        <p><br />Total Score: <a href="teamtreehouse.com/xxxxx">teamtreehouse.com/xxxxx</a></p>
+        <h3>About Netmatters</h3>
+        <ul>
+          <li>Established in 2008 Norfolk's leading technology company</li>
+          <li>Winner of the Princess Royal Training Award</li>
+          <li>Winner of EDP Skills of Tomorrow Award</li>
+          <li>80+ staff, 2 locations across Norfolk</li>
+          <li>Digital Marketing, Website & Software development & IT Support</li>
+          <li>Broad spectrum of clients, working nationwide</li>
+          <li>Operate to strict company values</li>
+        </ul>
       </section>
 
       <section id="portfolio-section" class="container">
@@ -97,7 +124,9 @@
             <a href="https://maneeshpatel777.github.io/portfolio2/" class="view-project">View Project</a>
           </div>
           <div class="project">
-            <div class="project-image"><img src="assets/images/netmatters-16-9.png" alt="Project Two" /></div>
+            <div class="project-image">
+              <img src="assets/images/netmatters-16-9.png" alt="Project Two" />
+            </div>
             <h3>Netmatters Site</h3>
             <a href="https://maneeshpatel777.github.io/2ndattemptnetmatters/" class="view-project">View Project</a>
           </div>
@@ -139,14 +168,16 @@
             <h4>Mobile:</h4>
             <p class=""><a href="tel:077755558888">0777 5555 8888</a></p>
             <h4>Email:</h4>
-            <p class=""><a href="mailto:maneesh@netmatters.com">maneesh@netmatters.com</a></p>
+            <p class="">
+              <a href="mailto:maneesh@netmatters.com">maneesh@netmatters.com</a>
+            </p>
           </div>
-          <form class="contact-form">
-            <input type="text" placeholder="First Name*" class="contact-form__text-box" />
-            <input type="text" placeholder="Last Name*" class="contact-form__text-box" />
-            <input type="email" placeholder="Email Address*" class="contact-form__text-box" />
-            <input type="text" placeholder="Subject" class="contact-form__text-box" />
-            <textarea placeholder="Message" class="contact-form__text-box"></textarea>
+          <form id="contact-form" class="contact-form">
+            <input type="text" name="firstName" placeholder="First Name*" class="contact-form__text-box" required />
+            <input type="text" name="lastName" placeholder="Last Name*" class="contact-form__text-box" required />
+            <input type="email" name="email" placeholder="Email Address*" class="contact-form__text-box" required />
+            <input type="text" name="subject" placeholder="Subject" class="contact-form__text-box" />
+            <textarea name="message" placeholder="Message*" class="contact-form__text-box" required></textarea>
             <button type="submit" class="contact-form__button">Submit</button>
           </form>
         </div>
@@ -159,128 +190,15 @@
       </section>
 
       <script>
-        const texts = {
-          default: ["Web Developer", "Software Engineer", "UI/UX Designer"],
-          about: ["Passionate", "Creative", "Precision"],
-          coding: ["HTML/CSS/SASS", "JavaScript/.NET", "PHP/Lavarel/SQL"],
-          scs: ["Learning", "Growing", "Achieving"],
-        };
-
-        let count = 0;
-        let index = 0;
-        let currentText = "";
-        let letter = "";
-        let cycle = 0;
-        const typingElements = [document.getElementById("typing-text-1"), document.getElementById("typing-text-2"), document.getElementById("typing-text-3")];
-
-        let typeTimeout;
-        let backspaceTimeout;
-
-        function updateTexts() {
-          const hash = window.location.hash;
-          if (hash === "#about-section") {
-            return texts.about;
-          } else if (hash === "#coding-section") {
-            return texts.coding;
-          } else if (hash === "#scs-section") {
-            return texts.scs;
-          }
-          return texts.default;
-        }
-
-        function resetAnimation() {
-          // Clear any ongoing timeouts
-          clearTimeout(typeTimeout);
-          clearTimeout(backspaceTimeout);
-
-          count = 0;
-          index = 0;
-          cycle = 0;
-          typingElements.forEach((el) => {
-            el.textContent = "";
-            el.style.borderRight = "";
-          });
-          // Start typing immediately
-          type();
-        }
-
-        function type() {
-          const currentTexts = updateTexts();
-          if (count === currentTexts.length) {
-            count = 0;
-            cycle++;
-            if (cycle === 2) {
-              return;
-            }
-          }
-          currentText = currentTexts[count];
-          letter = currentText.slice(0, ++index);
-
-          typingElements[count].textContent = letter;
-
-          if (letter.length === currentText.length) {
-            if (cycle === 0) {
-              backspaceTimeout = setTimeout(backspace, 1500);
-            } else {
-              if (count < 2) {
-                typingElements[count].style.borderRight = "none";
-              }
-              count++;
-              index = 0;
-              typeTimeout = setTimeout(type, 500);
-            }
-          } else {
-            typeTimeout = setTimeout(type, 100);
-          }
-        }
-
-        function backspace() {
-          if (index > 0) {
-            letter = currentText.slice(0, --index);
-            typingElements[count].textContent = letter;
-            backspaceTimeout = setTimeout(backspace, 33);
-          } else {
-            count++;
-            index = 0;
-            typeTimeout = setTimeout(type, 500);
-          }
-        }
-
-        // Start the initial animation
-        typeTimeout = setTimeout(type, 2000);
-
-        window.addEventListener("hashchange", resetAnimation);
-      </script>
-
-      <script>
-        const hamMenu = document.querySelector(".ham-menu");
-        const offScreenMenu = document.querySelector(".off-screen-menu");
-        const navLinks = document.querySelectorAll("#nav-section a");
-        const body = document.body;
-
-        hamMenu.addEventListener("click", () => {
-          hamMenu.classList.toggle("active");
-          offScreenMenu.classList.toggle("active");
-          body.classList.toggle("blur");
-          body.classList.toggle("no-scroll");
-        });
-
-        navLinks.forEach((link) => {
-          link.addEventListener("click", () => {
-            hamMenu.classList.remove("active");
-            offScreenMenu.classList.remove("active");
-            body.classList.remove("blur");
-            body.classList.remove("no-scroll");
-          });
-        });
-      </script>
-
-      <script>
         document.getElementById("back-to-top").addEventListener("click", function (event) {
           event.preventDefault();
           window.scrollTo(0, 0);
         });
       </script>
+
+      <script src="../assets/js/typing.js"></script>
+      <script src="../assets/js/menu.js"></script>
+      <!-- <script src="../assets/js/contact-form.js"></script> -->
     </body>
   </div>
 </html>
