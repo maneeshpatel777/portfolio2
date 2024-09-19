@@ -236,7 +236,8 @@ section {
   position: fixed;
   top: 0;
   right: 5px;
-  z-index: 1000; }
+  z-index: 1000;
+  cursor: pointer; }
 
 .off-screen-menu {
   top: 0;
